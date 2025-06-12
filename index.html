@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="conteudo">
+        <h1>Quer namorar comigo?🥹👉👈 </h1>
+        <div class="botoes">
+            
+                <button class="botao-sim" onclick=comemorar()>SIM</button>
+            
+
+            
+                <button class="botao-nao" onmouseover=trocarPosicao()>NÃO</button>
+            
+        </div>
+
+
+    </div>
+
+
+
+
+
+</body>
+
+<script>
+
+    const botao = document.querySelector(".botao-nao");
+
+
+    function trocarPosicao() {
+        botao.style.marginTop = Math.floor(Math.random() * 1000) + 'px';
+        botao.style.marginLeft = Math.floor(Math.random() * 1000) + 'px';
+    }
+
+    function comemorar() {
+        alert('RESPOSTA CORRETA!!!');
+        window.open('https://www.youtube.com/shorts/I4dl1EBpzwA');
+    }
+
+
+</script>
+
+<style>
+
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+
+    body {
+        background-color: #e86786;
+    }
+
+
+    .conteudo {
+        align-items: center;
+        justify-content: center;
+        display: flex;
+        flex-direction: column;
+        gap: 50px;
+        height: 100vh;
+    }
+
+    .botoes{
+        display: flex;
+        gap: 100px;
+    }
+
+
+
+    .botao-sim {
+        font-weight: 700;
+        border-radius: 7px;
+        border: none;
+        background-color: #22ff12;
+        width: 50px;
+        height: 20px;
+        cursor: pointer;
+        position: inherit;
+    }
+
+    .botao-nao {
+        font-weight: 700;
+        border-radius: 7px;
+        border: none;
+        background-color: #fd003b;
+        width: 50px;
+        height: 20px;
+        cursor: pointer;
+    }
+
+
+</style>
+
+
+</html>
